@@ -1,4 +1,8 @@
 #include "MenuButton.h"
+
+#include "MainGame.h"
+#include "GameState.h"
+
 #include <iostream>
 
 		/*
@@ -43,11 +47,17 @@ void MenuButton::update(sf::RenderWindow * window)
 		//Test Click
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && !_mPressed)
 		{
-			std::cout << std::string(_buttonText->getString()) << " button was pressed" << std::endl;
 			if (_buttonText->getString() == "Quit")
 			{
 				quitGame = true;
 			}
+
+			if (_buttonText->getString() == "Play")
+			{
+				std::cout << std::string(_buttonText->getString()) << " button was pressed" << std::endl;
+				coreState.setState(new MainGame());
+			}
+
 			_mPressed = true;
 		}
 		else if (!sf::Mouse::isButtonPressed(sf::Mouse::Left) && _mPressed)

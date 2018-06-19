@@ -1,7 +1,9 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
 #include "GameState.h"
+
+#include <SFML/Graphics.hpp>
+
 
 class MenuButton
 {

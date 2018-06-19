@@ -1,5 +1,7 @@
 #include "MainMenu.h"
 
+#include "MainGame.h"
+
 #include <iostream>
 
 
@@ -59,8 +61,8 @@ void MainMenu::destroy(sf::RenderWindow* window)
 	delete this->_title;
 	delete this->_playButton;
 	delete this->_quitButton;
-
 	delete this->_font;
+	this->_buttons.clear();
 
 	std::cout << "Destroyed\n";
 }
