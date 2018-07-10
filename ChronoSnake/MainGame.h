@@ -1,6 +1,8 @@
 #pragma once
 
 #include "GameState.h"
+#include "Level.h"
+#include "Player.h"
 
 class MainGame : public TinyState
 {
@@ -14,5 +16,9 @@ public:
 	void destroy(sf::RenderWindow* window);
 
 private:
+	std::vector<Level*> _levels; ///< vector of all the levels.
+	Player* _player;
 
+
+	int curLevel = 0;
 };
