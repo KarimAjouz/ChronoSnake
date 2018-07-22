@@ -41,3 +41,8 @@ Thumbs.db
 *.log
 *.tlog
 *.obj
+*.db
+*.opendb
+*.db
+*.db
+.vs/ChronoSnake/v15/Browse.VC.db
