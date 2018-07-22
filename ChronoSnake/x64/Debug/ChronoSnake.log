@@ -1,13 +1,2 @@
-﻿  Tile.cpp
-  Level.cpp
-c:\users\kareem\documents\github\chronosnake\chronosnake\chronosnake\level.cpp(61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\kareem\documents\github\chronosnake\chronosnake\chronosnake\level.cpp(62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  Compiling...
-  MenuButton.cpp
-c:\users\kareem\documents\github\chronosnake\chronosnake\chronosnake\menubutton.cpp(20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-  MainMenu.cpp
-c:\users\kareem\documents\github\chronosnake\chronosnake\chronosnake\mainmenu.cpp(25): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-  MainGame.cpp
-  Generating Code...
-  ChronoSnake.vcxproj -> C:\Users\Kareem\Documents\GitHub\ChronoSnake\ChronoSnake\x64\Debug\ChronoSnake.exe
+﻿  Player.cpp
+  ChronoSnake.vcxproj -> C:\Users\Karim\Documents\GitHub\ChronoSnake\x64\Debug\ChronoSnake.exe
