@@ -6,6 +6,8 @@ class Player
 {
 public:
 	Player();
+	Player(sf::Vector2f pSpawn);
+
 	~Player();
 
 	void init();
@@ -13,8 +15,17 @@ public:
 	void draw(sf::RenderWindow* window);
 
 private:
+	sf::Vector2f _levelSpawnLocation;
+
 	std::vector<Segment*> _segments;
 
-	sf::Image* _snakeTexture;
+	sf::Image _snakeImage;
+
+	bool _buttonPressed = false;
+
+	void addSegment();
+	void removeSegment();
+
+	void testInputs();
 };
 

@@ -4,6 +4,8 @@
 #include <vector>
 #include <SFML\Graphics.hpp>
 
+#include "Tile.h"
+
 class Level
 {
 public:
@@ -15,8 +17,13 @@ public:
 	void draw(sf::RenderWindow* window);
 	void loadTextures();
 
+	sf::Vector2f playerSpawn;
+
+
 private: 
 	std::vector<std::string> _levelData;
+
+	std::vector<Tile*> _levelTiles;
 	int _numMoves;
 
 	sf::Texture _floorTexture;
@@ -25,6 +32,5 @@ private:
 	sf::RectangleShape* _wallShape;
 
 
-	sf::Vector2f _playerSpawn;
 };
 

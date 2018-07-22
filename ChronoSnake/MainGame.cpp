@@ -22,7 +22,7 @@ void MainGame::init(sf::RenderWindow* window)
 	l->loadTextures();
 	_levels.push_back(l);
 
-	_player = new Player();
+	_player = new Player(l->playerSpawn);
 	_player->init();
 	
 
@@ -30,11 +30,13 @@ void MainGame::init(sf::RenderWindow* window)
 
 void MainGame::update(sf::RenderWindow* window)
 {
+	_player->update();
 }
 
 void MainGame::render(sf::RenderWindow* window)
 {
 	_levels[0]->draw(window);
+	_player->draw(window);
 }
 
 void MainGame::destroy(sf::RenderWindow* window)
